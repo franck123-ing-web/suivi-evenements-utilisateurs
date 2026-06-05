@@ -34,27 +34,25 @@ def create_event(
 def get_events(
     db: Session,
     user_id: str | None = None,
-    event_type: str | None = None
+    event_type: str | None = None,
+    skip: int = 0,
+    limit: int = 50
 ) -> list[Event]:
-    """
-    Retourne les événements filtrés.
-    """
 
     query = db.query(Event)
 
     if user_id:
-        query = query.filter(
-            Event.user_id == user_id
-        )
+        query = query.filter(Event.user_id == user_id)
 
     if event_type:
-        query = query.filter(
-            Event.event_type == event_type
-        )
+        query = query.filter(Event.event_type == event_type)
 
-    return query.order_by(
-        Event.timestamp.desc()
-    ).all()
+    return (
+        query.order_by(Event.timestamp.desc())
+        .offset(skip)
+        .limit(limit)
+        .all()
+    )
 
 
 def get_user_summary(

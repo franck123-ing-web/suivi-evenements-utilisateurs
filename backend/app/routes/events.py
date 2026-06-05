@@ -30,19 +30,20 @@ def create_new_event(
         event_data=event
     )
 
-@router.get(
-    "/events",
-    response_model=list[EventResponse]
-)
+@router.get("/events", response_model=list[EventResponse])
 def list_events(
     user_id: str | None = None,
     event_type: str | None = None,
+    skip: int = 0,
+    limit: int = 50,
     db: Session = Depends(get_db)
 ):
     return get_events(
         db=db,
         user_id=user_id,
-        event_type=event_type
+        event_type=event_type,
+        skip=skip,
+        limit=limit
     )
 
 @router.get(
