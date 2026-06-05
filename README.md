@@ -46,14 +46,20 @@ L’application permet de :
 
 ##  Cloner le projet
 
+faites:
+
 git clone https://github.com/franck123-ing-web/suivi-evenements-utilisateurs.git
 
 cd suivi-evenements-utilisateurs
 
 ###  Backend
 
+faites: 
+
 cd backend
+
 pip install -r requirements.txt
+
 uvicorn app.main:app --reload
 
 
@@ -63,6 +69,8 @@ Le projet respecte la contrainte Docker demandée dans le test technique.
 
 ## Lancer l’ensemble :
 
+faites:
+
 docker compose up --build
 
 
@@ -71,11 +79,14 @@ docker compose up --build
 faite les commandes: 
 
 cd frontend
+
 npm install
+
 npm run dev
 
 
 API disponible :
+
 http://127.0.0.1:8000/docs
 
 
