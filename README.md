@@ -10,7 +10,7 @@ Il a été réalisé dans le cadre d’un test technique visant à évaluer :
 - la clarté de la documentation
 - la cohérence des choix techniques
 
-L’objectif est de reproduire une version simplifiée d’un système de tracking d’activité utilisateur sans logique métier complexe.
+L’objectif est de reproduire une version simplifiée d’un système de tracking d’activité utilisateur sans logique métier complexe
 
 
 
@@ -46,7 +46,7 @@ L’application permet de :
 
 ##  Cloner le projet
 
-faites:
+faites :
 
 git clone https://github.com/franck123-ing-web/suivi-evenements-utilisateurs.git
 
@@ -54,7 +54,7 @@ cd suivi-evenements-utilisateurs
 
 ###  Backend
 
-faites: 
+faites : 
 
 cd backend
 
@@ -69,7 +69,7 @@ Le projet respecte la contrainte Docker demandée dans le test technique.
 
 ## Lancer l’ensemble :
 
-faites:
+faites :
 
 docker compose up --build
 
@@ -161,7 +161,6 @@ suivi-evenements-utilisateurs/
 ### Résumé utilisateur
 
 - Nombre total d’événements
-- Répartition par type
 - Premier événement
 - Dernier événement
 
@@ -193,8 +192,9 @@ Choisi pour la séparation des composants et la simplicité du rendu UI
 ### Améliorations possibles
 
 - Authentification JWT
+- filtrage
 - Pagination et tri avancé
-- Dashboard avec visualisation graphique (charts)
+- Dashboard avec visualisation graphique
 - Tests unitaires backend
 - Logs et monitoring
 - Amélioration UX/UI
