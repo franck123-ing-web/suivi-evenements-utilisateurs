@@ -1,0 +1,109 @@
+body {
+  margin: 0;
+  font-family: system-ui, Arial;
+  background: #f4f6f9;
+  color: #1f2937;
+}
+
+.app-container {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 30px;
+}
+
+.header {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.header h1 {
+  margin: 0;
+  font-size: 28px;
+}
+
+.subtitle {
+  color: #6b7280;
+  margin-top: 8px;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 20px;
+}
+
+@media (min-width: 900px) {
+  .grid {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+.card {
+  background: white;
+  border-radius: 12px;
+  padding: 20px;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.06);
+}
+
+h2 {
+  font-size: 18px;
+  margin-bottom: 15px;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.input {
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  outline: none;
+}
+
+.input:focus {
+  border-color: #3b82f6;
+}
+
+.btn {
+  padding: 10px;
+  border: none;
+  border-radius: 8px;
+  background: #3b82f6;
+  color: white;
+  cursor: pointer;
+}
+
+.btn:hover {
+  background: #2563eb;
+}
+
+.list {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.event-card {
+  padding: 12px;
+  border: 1px solid #eee;
+  border-radius: 10px;
+  background: #fafafa;
+}
+
+.tag {
+  display: inline-block;
+  padding: 3px 8px;
+  background: #e0ecff;
+  color: #2563eb;
+  border-radius: 6px;
+  font-size: 12px;
+  margin-bottom: 5px;
+}
+
+.date {
+  font-size: 12px;
+  color: #6b7280;
+}
