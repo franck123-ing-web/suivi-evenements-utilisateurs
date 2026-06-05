@@ -66,3 +66,4 @@ def user_summary(
         )
 
     return summary
+
