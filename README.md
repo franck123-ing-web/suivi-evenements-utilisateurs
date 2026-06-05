@@ -10,7 +10,7 @@ Il a été réalisé dans le cadre d’un test technique visant à évaluer :
 - la clarté de la documentation
 - la cohérence des choix techniques
 
-L’objectif est de reproduire une version simplifiée d’un système de tracking d’activité utilisateur sans logique métier complexe.
+L’objectif est de reproduire une version simplifiée d’un système de tracking d’activité utilisateur sans logique métier complexe
 
 
 
@@ -46,14 +46,20 @@ L’application permet de :
 
 ##  Cloner le projet
 
+faites :
+
 git clone https://github.com/franck123-ing-web/suivi-evenements-utilisateurs.git
 
 cd suivi-evenements-utilisateurs
 
 ###  Backend
 
+faites : 
+
 cd backend
+
 pip install -r requirements.txt
+
 uvicorn app.main:app --reload
 
 
@@ -63,10 +69,9 @@ Le projet respecte la contrainte Docker demandée dans le test technique.
 
 ## Lancer l’ensemble :
 
-docker compose up --build
+faites :
 
-API disponible :
-http://127.0.0.1:8000/docs
+docker compose up --build
 
 
 ### Frontend
@@ -74,8 +79,39 @@ http://127.0.0.1:8000/docs
 faite les commandes: 
 
 cd frontend
+
 npm install
+
 npm run dev
+
+
+API disponible :
+
+http://127.0.0.1:8000/docs
+
+
+##  Aperçu du projet
+
+Quelques captures du fonctionnement de l’application :
+
+###  API FastAPI (Swagger)
+L’API est accessible via Swagger UI pour tester les endpoints rapidement
+
+![Swagger API](docs/swagger.png)
+![Swagger API](docs/swagger2.png)
+
+
+
+### Création d’un événement 
+Interface permettant de créer un événement utilisateur.
+
+![Création événement](docs/liste-des-evenements.png)
+
+
+### Résumé utilisateur
+Statistiques globales d’un utilisateur (nombre d’événements, répartition, dates).
+
+![Résumé utilisateur](docs/resume-utilisateur.png)
 
 ### Structure du projet
 
@@ -125,7 +161,6 @@ suivi-evenements-utilisateurs/
 ### Résumé utilisateur
 
 - Nombre total d’événements
-- Répartition par type
 - Premier événement
 - Dernier événement
 
@@ -157,8 +192,9 @@ Choisi pour la séparation des composants et la simplicité du rendu UI
 ### Améliorations possibles
 
 - Authentification JWT
+- filtrage
 - Pagination et tri avancé
-- Dashboard avec visualisation graphique (charts)
+- Dashboard avec visualisation graphique
 - Tests unitaires backend
 - Logs et monitoring
 - Amélioration UX/UI
@@ -173,7 +209,7 @@ L’IA a été utilisée comme assistant de développement pour :
 
 ### Temps de réalisation
 
-J'ai réalisé ce test dans un temps environ de 2h34 à 3h02 heures
+J'ai réalisé ce test dans un temps environ de 2h34 à 3h02 min
 
 
 ##  Difficultés rencontrées et solutions
@@ -217,5 +253,5 @@ Les appels API échouaient initialement entre React et FastAPI
 
 ## Conclusion
 
-Projet réalisé par Franck joel Nzokou dans le cadre d’un test technique backend
+Projet réalisé par moi Franck joel Nzokou dans le cadre d’un test technique backend
 
