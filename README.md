@@ -65,9 +65,6 @@ Le projet respecte la contrainte Docker demandée dans le test technique.
 
 docker compose up --build
 
-API disponible :
-http://127.0.0.1:8000/docs
-
 
 ### Frontend
 
@@ -76,6 +73,34 @@ faite les commandes:
 cd frontend
 npm install
 npm run dev
+
+
+API disponible :
+http://127.0.0.1:8000/docs
+
+
+##  Aperçu du projet
+
+Quelques captures du fonctionnement de l’application :
+
+###  API FastAPI (Swagger)
+L’API est accessible via Swagger UI pour tester les endpoints rapidement
+
+![Swagger API](docs/swagger.png)
+![Swagger API](docs/swagger2.png)
+
+
+
+### Création d’un événement 
+Interface permettant de créer un événement utilisateur.
+
+![Création événement](docs/liste-des-evenements.png)
+
+
+### Résumé utilisateur
+Statistiques globales d’un utilisateur (nombre d’événements, répartition, dates).
+
+![Résumé utilisateur](docs/resume-utilisateur.png)
 
 ### Structure du projet
 
@@ -173,7 +198,7 @@ L’IA a été utilisée comme assistant de développement pour :
 
 ### Temps de réalisation
 
-J'ai réalisé ce test dans un temps environ de 2h34 à 3h02 heures
+J'ai réalisé ce test dans un temps environ de 2h34 à 3h02 min
 
 
 ##  Difficultés rencontrées et solutions
@@ -217,5 +242,5 @@ Les appels API échouaient initialement entre React et FastAPI
 
 ## Conclusion
 
-Projet réalisé par Franck joel Nzokou dans le cadre d’un test technique backend
+Projet réalisé par moi Franck joel Nzokou dans le cadre d’un test technique backend
 
