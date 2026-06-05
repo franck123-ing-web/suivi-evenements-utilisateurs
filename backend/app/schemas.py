@@ -22,7 +22,7 @@ class EventCreate(BaseModel):
 
     timestamp: datetime
 
-    metadata: dict | None = None
+    event_metadata: dict | None = None
 
 
 class EventResponse(BaseModel):
@@ -34,7 +34,7 @@ class EventResponse(BaseModel):
 
     timestamp: datetime
 
-    metadata: dict | None = None
+    event_metadata: dict | None = None
 
     model_config = ConfigDict(
         from_attributes=True

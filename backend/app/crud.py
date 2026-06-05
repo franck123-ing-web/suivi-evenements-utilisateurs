@@ -19,7 +19,7 @@ def create_event(
         user_id=event_data.user_id,
         event_type=event_data.event_type.value,
         timestamp=event_data.timestamp,
-        metadata=event_data.metadata
+        event_metadata=event_data.event_metadata
     )
 
     db.add(event)

@@ -32,7 +32,7 @@ class Event(Base):
         index=True
     )
 
-    metadata = Column(
-        JSON,
-        nullable=True
-    )
+    event_metadata = Column(
+    JSON,
+    nullable=True
+)
